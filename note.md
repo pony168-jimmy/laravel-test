@@ -1,15 +1,11 @@
-#  单字本 #
-- foundation : 基礎、根本、建立。  
-- dispatches : 派遣、分配。  
-- yield : 產量、產生、屈服、放棄。  
-- artisan : 工匠  
 # 流媒体
 - espn2 schedule https://www.tvpassport.com/tv-listings/stations/espn2/650  
 - 訊號  http://bnk.bankai.stream/espn2.m3u8
 - 參考網站 http://ripple.is/nfl  
 - 很多频道 http://123tvnow.com/watch/espn/
 - http://espn.tmedia.me/cache/espn1.m3u8  
-
+# 網站優化測試網站 #
+- GTmetrix 或 PageSpeed Insights
 # 可用讯号
 1. espn http://espn.tmedia.me/cache/espn1.m3u8
 2. espn2 http://espn.tmedia.me/cache/espn2.m3u8

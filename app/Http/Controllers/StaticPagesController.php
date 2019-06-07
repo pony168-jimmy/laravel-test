@@ -19,4 +19,13 @@ class StaticPagesController extends Controller
     public function about()
     {
         return view('static_pages/about');
-    }}
+    }
+
+    public function test(){
+        $html = '
+        <div class="container">
+            <h1>Title</h1>
+        </div>';
+        echo $html;
+    }
+}

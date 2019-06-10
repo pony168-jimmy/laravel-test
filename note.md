@@ -9,7 +9,8 @@
 # 可用讯号
 1. espn http://espn.tmedia.me/cache/espn1.m3u8
 2. espn2 http://espn.tmedia.me/cache/espn2.m3u8
-
+3. NBCSN http://w5.11223344.host/live/nbcsn/playlist.m3u8
+- ffplay -headers "Referer:http://123tvnow.com/watch/nbc-sport-network-nbcsn/"$'\r\n' http://w5.11223344.host/live/nbcsn/playlist.m3u8
  # 爬虫常用相關函式 #
 
 ## preg_match($regex,$str,$result,$flag);

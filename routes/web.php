@@ -13,13 +13,14 @@
 | 包含“web”中间件组的组中的 RouteServiceProvider。现在创造一些伟大的东西!
 |
 */
+//StaticPageController
+Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/help', 'StaticPagesController@help')->name('help');
+Route::get('/about', 'StaticPagesController@about')->name('about');
+Route::get('/test', 'StaticPagesController@test')->name('test');
 
-Route::get('/', 'StaticPagesController@home');
-Route::get('/help', 'StaticPagesController@help');
-Route::get('/about', 'StaticPagesController@about');
-Route::get('/test', 'StaticPagesController@test');
+//UserController
+Route::get('signup', 'UsersController@create')->name('signup');
 
-/**
- * Vocabulary
- */
+// VocabularyController
 Route::resource('/vocabulary','VocabularyController');

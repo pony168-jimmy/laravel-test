@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Vocabulary;
 use Illuminate\Http\Request;
 
 class StaticPagesController extends Controller
@@ -22,10 +22,6 @@ class StaticPagesController extends Controller
     }
 
     public function test(){
-        $html = '
-        <div class="container">
-            <h1>Title</h1>
-        </div>';
-        echo $html;
+        return view('static_pages/test');
     }
 }

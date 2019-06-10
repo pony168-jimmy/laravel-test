@@ -18,3 +18,8 @@ Route::get('/', 'StaticPagesController@home');
 Route::get('/help', 'StaticPagesController@help');
 Route::get('/about', 'StaticPagesController@about');
 Route::get('/test', 'StaticPagesController@test');
+
+/**
+ * Vocabulary
+ */
+Route::resource('/vocabulary','VocabularyController');

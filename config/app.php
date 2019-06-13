@@ -188,6 +188,9 @@ return [
     | is started. However, feel free to register as many as you wish as
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
+    |这个类别名数组将在应用程序启动时注册。
+    |不过，您可以随意注册尽可能多的别名，因为别名是“惰性”加载的，所以它们不会妨碍性能。
+    |
     */
 
     'aliases' => [

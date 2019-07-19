@@ -10,3 +10,5 @@
 - solution : 解決  
 - struggle : 奮鬥、掙扎  
 - staging server : 開發用伺服器  
+- parrern : 模仿  
+

@@ -14,8 +14,12 @@ class CreateVocabulariesTable extends Migration
     public function up()
     {
         Schema::create('vocabularies', function (Blueprint $table) {
-            $table->increments('id');
-            $table->text('Vocabulary');
+            $table->increments('id')->unique();
+            $table->text('en');
+            $table->text('ch');
+            $table->boolean('remember')->default(false);
+            $table->integer('times')->default(0);
+            $table->text('whos');
             $table->timestamps();
         });
     }

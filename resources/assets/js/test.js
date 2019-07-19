@@ -12,18 +12,39 @@ var text = `
 - solution : 解決  
 - struggle : 奮鬥、掙扎  
 `;
-// var html = converter.makeHtml(text);
-// $('.markdown').html(html);
-// document.querySelector('.markdown').innerHTML = html;
-let req = axios.create({
-    url: '/top-matches-soccerstreams',
-    baseURL: 'https://darsh.sportsvideo.net/api/',
-    xsrfCookieName: '__cfduid=d680f0bdaaadb4eaa18adc9e77a759b341560250717',
-    headers: {
-        'authority': 'darsh.sportsvideo.net',
-    },
-    params: {
-        date: '2019-06-11'
-    },
-});
-req.get();
+
+// let time_code = Math.round(new Date().getTime() / 1000);
+// const appkey = '26ed0c5c46587d77';
+// let hash_key = `26ed0c5c46587d77apple_key_${time_code}2arfjnv1kxbVZKy2QnSUKJ1R2X1C8qkF`
+// let content = {
+//     'q': 'apple',
+//     'from': 'en',
+//     'to': 'zh-CHS',
+//     'appkey': '26ed0c5c46587d77',
+//     'salt': '_key_',
+//     'sign': hash_key,
+//     'signType': 'v3',
+//     'curtime': time_code
+// }
+
+// axios.post('http://openapi.youdao.com/api', content).then((res) => {
+//     console.log(res)
+// }).catch((error) => {
+//     console.log(error)
+// })
+// let test = axios({
+//     method: 'post',
+//     url: 'http://openapi.youdao.com/api',
+//     data: {
+//         'q': 'apple',
+//         'from': 'en',
+//         'to': 'zh-CHS',
+//         'appkey': '26ed0c5c46587d77',
+//         'salt': '_key_',
+//         'sign': hash_key,
+//         'signType': 'v3',
+//         'curtime': time_code
+//     },
+//     headers: { 'refer': 'http://openapi.youdao.com/' },
+// });
+// axios.post('http://openapi.youdao.com/api');

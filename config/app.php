@@ -11,7 +11,10 @@ return [
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
     |
-    */
+    /**
+     * 此值是应用程序的名称。
+     * 当框架需要将应用程序的名称放入通知或应用程序或其包所需的任何其他位置时，将使用此值。
+     */
 
     'name' => env('APP_NAME', 'Laravel'),
 
@@ -24,7 +27,10 @@ return [
     | running in. This may determine how you prefer to configure various
     | services your application utilizes. Set this in your ".env" file.
     |
-    */
+     * 此值确定应用程序当前运行的“环境”。
+     * 这可能决定您希望如何配置应用程序使用的各种服务。
+     * 把这个放在你的”。env”文件。
+     */
 
     'env' => env('APP_ENV', 'production'),
 
@@ -37,6 +43,9 @@ return [
     | stack traces will be shown on every error that occurs within your
     | application. If disabled, a simple generic error page is shown.
     |
+     * 当应用程序处于调试模式时，应用程序中发生的每个错误都将显示带有堆栈跟踪的详细错误消息。
+     * 如果禁用，将显示一个简单的通用错误页面。
+     * 
     */
 
     'debug' => env('APP_DEBUG', false),
@@ -49,7 +58,9 @@ return [
     | This URL is used by the console to properly generate URLs when using
     | the Artisan command line tool. You should set this to the root of
     | your application so that it is used when running Artisan tasks.
-    |
+     * 
+     * 控制台使用这个URL在使用Artisan命令行工具时正确地生成URL。
+     * 您应该将其设置为应用程序的根，以便在运行Artisan任务时使用它。
     */
 
     'url' => env('APP_URL', 'http://localhost'),
@@ -63,6 +74,9 @@ return [
     | will be used by the PHP date and date-time functions. We have gone
     | ahead and set this to a sensible default for you out of the box.
     |
+     * 
+     * 这里可以为应用程序指定默认时区，PHP date和date-time函数将使用该时区。
+     * 我们已经将其设置为一个合理的默认值。
     */
 
     'timezone' => 'UTC',
@@ -76,6 +90,8 @@ return [
     | by the translation service provider. You are free to set this value
     | to any of the locales which will be supported by the application.
     |
+     * 应用程序语言环境确定翻译服务提供者将使用的默认语言环境。
+     * 您可以自由地将此值设置为应用程序将支持的任何地区。
     */
 
     'locale' => 'en',
@@ -89,6 +105,8 @@ return [
     | is not available. You may change the value to correspond to any of
     | the language folders that are provided through your application.
     |
+     * 回退区域设置确定当前区域设置不可用时要使用的区域设置。
+     * 您可以将该值更改为与通过应用程序提供的任何语言文件夹相对应。
     */
 
     'fallback_locale' => 'en',

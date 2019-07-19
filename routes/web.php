@@ -19,8 +19,12 @@ Route::get('/help', 'StaticPagesController@help')->name('help');
 Route::get('/about', 'StaticPagesController@about')->name('about');
 Route::get('/test', 'StaticPagesController@test')->name('test');
 
+//Redis Test
+Route::get('/redis_test', 'RedisTestController@test')->name('redis_test');
+
 //UsersController
 Route::get('signup', 'UsersController@create')->name('signup');
+
 /**
  * resource 的總路徑
  * Route::get('/users', 'UsersController@index')->name('users.index');
@@ -31,8 +35,9 @@ Route::get('signup', 'UsersController@create')->name('signup');
  * Route::patch('/users/{user}', 'UsersController@update')->name('users.update');
  * Route::delete('/users/{user}', 'UsersController@destroy')->name('users.destroy');
  */
-Route::resource('users','UsersController');
+// Route::resource('users','UsersController');
+Route::get('/users/{user}', 'UsersController@show')->name('users.show');
 
 
 // VocabularyController
-Route::resource('/vocabulary','VocabularyController');
+Route::get('/vocabulary/{id?}','VocabularyController@show');

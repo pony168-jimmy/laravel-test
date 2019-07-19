@@ -49955,22 +49955,43 @@ if (false) {
 /***/ (function(module, exports) {
 
 var converter = new showdown.Converter();
-var text = '\n#  \u55AE\u5B57\u672C #\n## DAY1 ##\n- foundation : \u57FA\u790E\u3001\u6839\u672C\u3001\u5EFA\u7ACB\u3002\n- dispatches : \u6D3E\u9063\u3001\u5206\u914D\u3002\n- yield : \u7522\u91CF\u3001\u7522\u751F\u3001\u5C48\u670D\u3001\u653E\u68C4\u3002\n- artisan : \u5DE5\u5320\n- optimize : \u512A\u5316\u3001\u5B8C\u5584\n- script : \u8173\u672C  \n- buffer : \u7DE9\u885D  \n- solution : \u89E3\u6C7A  \n- struggle : \u596E\u9B25\u3001\u6399\u624E  \n';
-// var html = converter.makeHtml(text);
-// $('.markdown').html(html);
-// document.querySelector('.markdown').innerHTML = html;
-var req = axios.create({
-    url: '/top-matches-soccerstreams',
-    baseURL: 'https://darsh.sportsvideo.net/api/',
-    xsrfCookieName: '__cfduid=d680f0bdaaadb4eaa18adc9e77a759b341560250717',
-    headers: {
-        'authority': 'darsh.sportsvideo.net'
-    },
-    params: {
-        date: '2019-06-11'
-    }
-});
-req.get();
+var text = "\n#  \u55AE\u5B57\u672C #\n## DAY1 ##\n- foundation : \u57FA\u790E\u3001\u6839\u672C\u3001\u5EFA\u7ACB\u3002\n- dispatches : \u6D3E\u9063\u3001\u5206\u914D\u3002\n- yield : \u7522\u91CF\u3001\u7522\u751F\u3001\u5C48\u670D\u3001\u653E\u68C4\u3002\n- artisan : \u5DE5\u5320\n- optimize : \u512A\u5316\u3001\u5B8C\u5584\n- script : \u8173\u672C  \n- buffer : \u7DE9\u885D  \n- solution : \u89E3\u6C7A  \n- struggle : \u596E\u9B25\u3001\u6399\u624E  \n";
+
+// let time_code = Math.round(new Date().getTime() / 1000);
+// const appkey = '26ed0c5c46587d77';
+// let hash_key = `26ed0c5c46587d77apple_key_${time_code}2arfjnv1kxbVZKy2QnSUKJ1R2X1C8qkF`
+// let content = {
+//     'q': 'apple',
+//     'from': 'en',
+//     'to': 'zh-CHS',
+//     'appkey': '26ed0c5c46587d77',
+//     'salt': '_key_',
+//     'sign': hash_key,
+//     'signType': 'v3',
+//     'curtime': time_code
+// }
+
+// axios.post('http://openapi.youdao.com/api', content).then((res) => {
+//     console.log(res)
+// }).catch((error) => {
+//     console.log(error)
+// })
+// let test = axios({
+//     method: 'post',
+//     url: 'http://openapi.youdao.com/api',
+//     data: {
+//         'q': 'apple',
+//         'from': 'en',
+//         'to': 'zh-CHS',
+//         'appkey': '26ed0c5c46587d77',
+//         'salt': '_key_',
+//         'sign': hash_key,
+//         'signType': 'v3',
+//         'curtime': time_code
+//     },
+//     headers: { 'refer': 'http://openapi.youdao.com/' },
+// });
+// axios.post('http://openapi.youdao.com/api');
 
 /***/ }),
 /* 45 */

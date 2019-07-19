@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class VocabularyController extends Controller
 {
-    public function create (Request $Request){
+    public function show (Request $Request){
         dd($Request);
     }
 }

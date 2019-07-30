@@ -13,19 +13,27 @@
 | 包含“web”中间件组的组中的 RouteServiceProvider。现在创造一些伟大的东西!
 |
 */
+
+//Redis Test
+Route::get('/redis_test', 'RedisTestController@test')->name('redis_test');
+//Lottery
+Route::get('/lottery','LotterController@index');
+
+
 //StaticPageController
 Route::get('/', 'StaticPagesController@home')->name('home');
 Route::get('/help', 'StaticPagesController@help')->name('help');
 Route::get('/about', 'StaticPagesController@about')->name('about');
 Route::get('/test', 'StaticPagesController@test')->name('test');
 
-//Redis Test
-Route::get('/redis_test', 'RedisTestController@test')->name('redis_test');
 
 //UsersController
-Route::get('signup', 'UsersController@create')->name('signup');
+Route::get('/signup', 'UsersController@create')->name('signup');
+
+Route::get('/users/{user}', 'UsersController@show')->name('users.show');
 
 /**
+ * Route::resource('users', 'UsersController');
  * resource 的總路徑
  * Route::get('/users', 'UsersController@index')->name('users.index');
  * Route::get('/users/create', 'UsersController@create')->name('users.create');

@@ -22,6 +22,8 @@ class StaticPagesController extends Controller
         return view('static_pages/about');
     }
 
+
+    
     public function test(){
         $q = 'foundation';
         $app_key = '26ed0c5c46587d77';

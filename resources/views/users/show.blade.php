@@ -1,4 +1,4 @@
-{{-- @extends('layouts.default')
+@extends('layouts.default')
 @section('title',$user->name)
 
 @section('content')
@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-@stop --}}
+@stop
 @php
 
 @endphp
